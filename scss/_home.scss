@@ -105,6 +105,9 @@ body {
                     }
                 }
             }
+            .sub2 {
+                display:none
+            }
             p {
                 padding-bottom:24px;
             }
@@ -120,7 +123,33 @@ body {
                 grid-template-columns: 1fr;
             }
             .container1 {
-                height:600px;
+                height:calc(100vh - 80px);
+                .sub2 {
+                    display:block;
+                    transform:translateY(10px);
+                    justify-self: center;
+                    bottom: 20px;
+                    animation-duration: 6s;
+                    animation-name: arrowbottom;
+                    animation-iteration-count: infinite;
+                    position: absolute;
+                    svg {
+                        width:32px;
+                        height:32px;
+                    }
+                }
+                @keyframes arrowbottom {
+                    0% {
+                      transform:translateY(0px);
+                    }
+                  
+                    50% {
+                      transform:translateY(10px);
+                    }
+                    100% {
+                        transform:translateY(0px);
+                    }
+                  }
             }
             .container2 {
                 display:none;
