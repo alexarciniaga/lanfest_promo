@@ -119,6 +119,12 @@ body {
             .grid {
                 grid-template-columns: 1fr;
             }
+            .container1 {
+                height:600px;
+            }
+            .container2 {
+                display:none;
+            }
         }
     }
     #section2 {
